@@ -1,0 +1,2 @@
+{x = 1402.753, y = 1134.646, z = 114.334} {h = 19.499} {Comment: Camerino Camorra},
+{x = 1402.071, y = 1135.157, z = 114.334} {h = 227.202} {Comment: Camerino Camorra},

@@ -1,0 +1,6 @@
+{x = -784.238, y = 351.597, z = 87.998} {h = 173.806} {Comment: Vendita Oppio},
+{x = 1407.425, y = 1152.342, z = 114.443} {h = 205.567} {Comment: Vestiti Mafia},
+{x = 71.843, y = 7047.213, z = 15.251} {h = 140.079} {Comment: Raccolta Papavero},
+{x = 3309.896, y = 5189.946, z = 19.714} {h = 229.892} {Comment: Entrata Laboratorio},
+{x = 2606.502, y = 6170.493, z = 172.272} {h = 179.299} {Comment: Raccolta Oppio},
+{x = 2466.59, y = 6118.368, z = 173.172} {h = 18.262} {Comment: Raccolta Papavero},

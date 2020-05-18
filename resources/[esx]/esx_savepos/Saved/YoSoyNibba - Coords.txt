@@ -1,0 +1,15 @@
+{x = 1899.391, y = 4925.366, z = 48.84} {h = 278.42} {Comment: Nuova raccolta metanfetamina},
+{x = 794.623, y = 2162.818, z = 53.093} {h = 273.972} {Comment: Processo Metanfetamina},
+{x = 589.284, y = -3284.268, z = 6.07} {h = 355.049} {Comment: Processo Nuova Fazione Kage}, Vector3(589.284, -3284.268, 6.07) TP: /tp 589.284 -3284.268 6.07
+{x = 848.655, y = -2503.824, z = 40.686} {h = 101.491} {Comment: Vendita Nuova Fazione Kage}, Vector3(848.655, -2503.824, 40.686) TP: /tp 848.655 -2503.824 40.686
+{x = 1493.962, y = -2120.455, z = 75.927} {h = 179.513} {Comment: Raccolta Nuova Fazione Kage}, Vector3(1493.962, -2120.455, 75.927) TP: /tp 1493.962 -2120.455 75.927
+{x = -1517.136, y = 851.612, z = 181.595} {h = 160.636} {Comment: Casa Fazione Nuova Kage}, Vector3(-1517.136, 851.612, 181.595) TP: /tp -1517.136 851.612 181.595
+{x = -1585.025, y = 776.667, z = 189.194} {h = 291.087} {Comment: Spogliatoio Fazione Nuova Kage}, Vector3(-1585.025, 776.667, 189.194) TP: /tp -1585.025 776.667 189.194
+{x = -1547.975, y = 883.014, z = 181.296} {h = 34.375} {Comment: Garage Pubblico Fazione nuova Kage (blip verde)}, Vector3(-1547.975, 883.014, 181.296) TP: /tp -1547.975 883.014 181.296
+{x = -1545.372, y = 886.574, z = 181.349} {h = 23.274} {Comment: Garage Pubblico Fazione nuova Kage (blip rosso)}, Vector3(-1545.372, 886.574, 181.349) TP: /tp -1545.372 886.574 181.349
+{x = -1542.339, y = 889.561, z = 181.527} {h = 187.983} {Comment: Garage Fazione nuova Kage (prendi veicolo)}, Vector3(-1542.339, 889.561, 181.527) TP: /tp -1542.339 889.561 181.527
+{x = -1539.753, y = 889.413, z = 181.65} {h = 319.485} {Comment: Garage Fazione nuova Kage (posa veicolo)}, Vector3(-1539.753, 889.413, 181.65) TP: /tp -1539.753 889.413 181.65
+{x = -1934.236, y = 2635.049, z = 3.389} {h = 77.501} {Comment: Raccolta efedrina narcos}, Vector3(-1934.236, 2635.049, 3.389) TP: /tp -1934.236 2635.049 3.389
+{x = -3116.895, y = 242.415, z = 12.492} {h = 110.676} {Comment: Blip laboratorio (processo efedrina)}, Vector3(-3116.895, 242.415, 12.492) TP: /tp -3116.895 242.415 12.492
+{x = 1589.919, y = 2257.318, z = 74.157} {h = 53.361} {Comment: Raccolta lsd nuova fazione}, Vector3(1589.919, 2257.318, 74.157) TP: /tp 1589.919 2257.318 74.157
+{x = -2223.816, y = -622.764, z = 15.615} {h = 88.2} {Comment: IconaMappaLuxorResort}, Vector3(-2223.816, -622.764, 15.615) TP: /tp -2223.816 -622.764 15.615

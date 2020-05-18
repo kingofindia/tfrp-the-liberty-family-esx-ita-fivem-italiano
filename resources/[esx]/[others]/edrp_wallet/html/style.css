@@ -1,0 +1,145 @@
+body {  
+	font-family: 'Roboto', sans-serif;
+	color: rgb(105, 212, 17);
+	overflow: hidden;
+ }
+
+#wrapperHUD {
+	margin-top: 10vh;
+	margin-left: -200vw;
+	display: flex; 
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: 100%;
+}
+
+#idkort{
+	background: url(img/bg/legitimation.png) no-repeat;
+	background-position: center;
+	margin-left: 45%;
+	margin-top: -10%;
+	padding: 0;
+	background-size: 100%;
+	display: flex; 
+	width: 50px;
+	height: 43%;
+	position: absolute;
+}
+
+#idkort:hover {
+	opacity:0.8;
+}
+
+#kontant {
+	background: url(img/bg/500kr.jpg) no-repeat;
+	background-position: center;
+	background-size: 100%;
+	display: flex;
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	margin-top: -38.8%;
+	margin-left: -5%;
+	width: 190%;
+	height: 55%;
+}
+
+#kontant:hover {
+	opacity: 0.85;
+}
+
+#kreditkort {
+	background: url(img/bg/kreditkort.png) no-repeat;
+	background-position: center;
+	margin: 0;
+	padding: 15px;
+	background-size: 100%;
+	display: block; 
+	width: 200px;
+	height: 30%;
+	position: absolute;
+	overflow: hidden;
+	margin-left: -2%;
+	margin-top: -2%;
+}
+
+#kreditkort:hover {
+	opacity: 0.8;
+}
+
+#image {
+	background: url(img/bg/wallet.png) no-repeat;
+	background-position: center;
+	margin-left: 56%;
+	padding: 0;
+	background-size: 100%;
+	display: flex; 
+	width: 900px;
+	height: 900px;
+	position: absolute;
+}
+
+#walletDiv{
+	margin: 0;
+	margin-top: -25%;
+	margin-left: 16.5%;
+	display: flex;
+	height: 15vh;
+	width: 15vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: absolute;
+	z-index: 3;
+}
+
+#blackMoneyDiv{
+	width: 100%;
+	position: absolute;
+	margin: 0%;
+	margin-left: 60%;
+	margin-top: -27%;
+	align-items: center;
+	flex-direction: row;
+}
+
+#wallet, #blackMoney{
+	display: none;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(105, 212, 17);
+	font-size: 30px;
+	width: 190px;
+	height: 50px;
+	margin: 0px;
+	opacity: 0.75;
+	z-index: 2;
+}
+
+#moneySection {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 5px;
+	width: 300vw;
+	height: 100vh;
+	margin-right: 10px;
+}
+
+#offshoreImg {
+	margin-right: 1px;
+	margin-bottom: -10px;
+}
+
+#walletImg {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#offshoreImg, #bankImg, #walletImg, #societyImg{
+	height: 50px;
+	width: 50px;
+}
+
+#walletImg{height: 35px;}

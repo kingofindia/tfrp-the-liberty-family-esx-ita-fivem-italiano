@@ -1,0 +1,133 @@
+@font-face {
+  font-family: bankgothic;
+  src: url('../fonts/bankgothic.ttf');
+}
+
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+  font-family: pcdown;
+  src: url('../fonts/pdown.ttf');
+}
+
+.menu {
+  background-color: #313131;
+  font-family: Open Sans;
+  min-width  : 430px;
+  color: transparent;
+  position: absolute;
+  text-decoration: none;
+  color: #333333;
+  opacity: 10%;
+  border-radius: 10px;
+}
+
+.menu .head {
+  color: white;
+  text-align: center;
+  height: 35px;
+  line-height: 38px;
+  padding: 10px;
+  font-weight:bold;
+}
+
+.menu .menu-items {
+  max-height: 357px;
+  text-align: left;
+  display: block;
+  overflow-y: auto;
+  overflow: hidden;
+  margin-bottom: 5px;
+  padding: 0px 5px 0px 5px;
+  font-weight:bold;
+}
+
+.menu .menu-items .menu-item {
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 32px;
+  border-left: 2px solid transparent;
+  border-bottom: 0px solid rgba(80, 80, 80);
+  padding-left: 5px;
+  background: rgba(83, 84, 83)
+}
+
+.menu .menu-items .menu-item.selected {
+  background-color: rgba(80, 80, 80);
+  border: 1.5px solid #FFF;
+  padding-left: 15px
+}
+
+.menu.align-left {
+  left: 40;
+  top : 50%;
+  transform: 0.5s 
+}
+
+/* .menu.align-top-left {
+  left: 40;
+  top : 40; 
+} */
+
+.menu.align-top-left {
+  left: 20;
+  top : 35%;
+  transform: 0.5s 
+}
+
+.menu.align-top {
+  left: 50%;
+  top : 40;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-top-right {
+  right: 10;
+  top  : 40;
+}
+
+.menu.align-right {
+  right: 40;
+  top  : 50%;
+  transform: translate(0, -50%); 
+}
+
+.menu.align-bottom-right {
+  right : 40;
+  bottom: 40;
+}
+
+.menu.align-bottom {
+  left  : 50%;
+  bottom: 40;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-bottom-left {
+  left  : 40;
+  bottom: 40;
+}
+
+.menu.align-center {
+  left : 50%;
+  top  : 50%;
+  transform: translate(-50%, -50%); 
+}
+
+
+.menu .menu-items :last-child{
+  background: rgba(83, 84, 83);
+  border-radius: 0px 0px 5px 5px;
+  border-width: 1px 1px 1px 1px;
+}
+
+.menu .menu-items .menu-item :first-child{
+  background: rgba(83, 84, 83);
+  border-radius: 5px 5px 0px 0px;
+  border-width: 1px 1px 1px 1px;
+}

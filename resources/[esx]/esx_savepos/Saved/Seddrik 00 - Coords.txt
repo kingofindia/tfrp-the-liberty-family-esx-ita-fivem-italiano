@@ -1,0 +1,3 @@
+{x = -278.748, y = 2206.304, z = 129.86} {h = 165.511} {Comment: VENDITAEFEDRINA},
+{x = 92.274, y = 3752.141, z = 40.772} {h = 71.371} {Comment: PROCESSOEFEDRINA},
+{x = -1354.169, y = 4853.354, z = 138.045} {h = 119.863} {Comment: RACCOLTAEFEDRINA},

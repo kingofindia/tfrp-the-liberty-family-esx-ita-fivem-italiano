@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `jail` VARCHAR(255) NOT NULL DEFAULT '0' AFTER `height`;

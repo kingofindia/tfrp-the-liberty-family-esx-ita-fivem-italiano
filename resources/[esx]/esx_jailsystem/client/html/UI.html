@@ -1,0 +1,390 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	
+		<style>
+            .general {display: none;}
+	           .main {display: none;}
+            .cella1 {display: none;}
+			 .cella1UI {display: none;} 
+			 .cella2UI {display: none;}
+			  .fermoUI {display: none;}
+			  .carcereUI {display: none;}
+			  .cortileUI {display: none;}
+			  .multaUI {display: none;}
+			  .liberaUI {display: none;}
+            
+
+		</style>
+		
+
+	
+	</head>
+
+    <body>
+            <div class="general">
+				
+					
+                <div class="main">            
+                    <button id="cella1">Cella 1</button>
+                    <button id="cella2">Cella 2</button>
+                    <button id="fermo">Cella 3</button>
+                    <button id="carcere">Carcere</button>
+                    <button id="cortile">Cortile</button>
+                    <button id="multa">Multa</button>
+                    <button id="libera">Libera</button>
+                </div>
+
+            </div>
+            <div class='cella1UI'>
+                <form id="cella11">
+						<input id="achi" type="text" placeholder="Inserire ID player"><br>
+                        <input id="minutini" type="text" placeholder="Minuti"><br> 
+                        <button id="cella11" type="submit">Metti in cella</button>
+                        <button id="cancelcella1" type="button">Annulla</button> 	
+                </form>
+
+            </div>
+			
+		 <div class='cella2UI'>
+                <form id="cella21">
+						<input id="achidue" type="text" placeholder="Inserire ID player"><br>
+                        <input id="minutinidue" type="text" placeholder="Minuti"><br>
+                        <button id="cella21" type="submit">Metti in cella</button>
+                        <button id="cancelcella2" type="button">Annulla</button> 	
+                </form>
+
+          </div>
+
+		  <div class='fermoUI'>
+                <form id="fermo1">
+                        <input id="achitre" type="text" placeholder="Inserire ID player"><br>
+						<input id="minutinitre" type="text" placeholder="Minuti"><br>
+                        <button id="fermo1" type="submit">Metti in cella</button>
+                        <button id="cancelfermo" type="button">Annulla</button> 	
+				</form>
+
+          </div>
+		  
+		  <div class='carcereUI'>
+                <form id="carcere1">
+                        <input id="to" type="text" placeholder="Inserire ID player"><br>
+						<input id="amountt" type="text" placeholder="Minuti"><br>
+                        <button id="carcere1" type="submit">Metti in carcere</button>
+                        <button id="cancelcarcere" type="button">Annulla</button> 	
+				</form>
+
+          </div>
+
+          <div class='cortileUI'>
+                <form id="cortile1">
+                        <input id="pl" type="text" placeholder="Inserire ID player"><br>
+						<input id="tempo" type="text" placeholder="Minuti"><br>
+                        <button id="cortile1" type="submit">Metti in carcere</button>
+                        <button id="cancelcortile" type="button">Annulla</button> 	
+				</form>
+
+          </div>
+
+          <div class='multaUI'>
+                <form id="multa1">
+                        <input id="multato" type="text" placeholder="Inserire ID player"><br>
+						<input id="multone" type="text" placeholder="Importo"><br>
+                        <button id="multa1" type="submit">Multa</button>
+                        <button id="cancelmulta" type="button">Annulla</button> 	
+				</form>
+
+          </div>
+
+          <div class='liberaUI'>
+                <form id="libera1">
+                        <input id="achiquattro" type="text" placeholder="Inserire ID player"><br>
+                        <button id="libera1" type="submit">Libera</button>
+                        <button id="cancellibera" type="button">Annulla</button> 	
+				</form>
+
+          </div>
+			
+
+	  
+	</body>
+	
+	<script type="text/javascript">
+	
+	
+	$(function() {
+	
+		window.addEventListener('message', function(event) {
+		   
+    
+
+			if (event.data.type == "openGeneral"){
+                $('.main').css('display', 'block')
+				$('.general').css('display', 'block')
+                $('.cella1').css('display', 'none')
+			
+			} else if (event.data.type == "closeAll"){
+                $('.main').css('display', 'none')
+				$('.general').css('display', 'none')
+                $('.cella1').css('display', 'none')
+			} 
+			
+		});
+	});
+	
+
+	</script>
+	
+	<script type="text/javascript">	
+        $('#exitbank').click(function(){
+            $('.general').css('display', 'none')
+            $('.main').css('display', 'none')
+                       
+            
+            $.post('http://esx_jailsystem/NUIFocusOff', JSON.stringify({}));
+            
+        })
+        
+         $('#cella1').click(function(){
+            $('.general').css('display', 'none')
+            $('.cella1UI').css('display', 'block')
+			$('#cella11').css('display', 'block')
+		
+        })
+		
+		
+		 $('#cella2').click(function(){
+            $('.general').css('display', 'none')
+            $('.cella2UI').css('display', 'block')
+			$('#cella21').css('display', 'block')
+			
+		
+        })
+         $('#cancelcella1').click(function(){
+    
+            $('.general').css('display', 'block')
+            $('.cella1UI').css('display', 'none')
+        })
+         $('#cancelcella2').click(function(){
+    
+            $('.general').css('display', 'block')
+            $('.cella2UI').css('display', 'none')
+        })
+        
+    $("#cella11").submit(function(e) {
+        e.preventDefault(); 
+        
+        $.post('http://esx_jailsystem/cella1', JSON.stringify({
+            achi: $("#achi").val(),
+            minutini: $("#minutini").val()
+			
+        }));
+		
+		$('.general').css('display', 'none')
+		$('.cella1UI').css('display', 'none')
+		$('#cella11').css('display', 'none')
+		
+		$.post('http://esx_jailsystem/NUIFocusOff', JSON.stringify({}));
+	});
+
+	$("#fermo1").submit(function(h) {
+        h.preventDefault(); 
+        
+        $.post('http://esx_jailsystem/fermo', JSON.stringify({
+			achitre: $("#achitre").val(),
+            minutinitre: $("#minutinitre").val()
+			
+        }));
+		
+		$('.general').css('display', 'none')
+		$('.cella1UI').css('display', 'none')
+		$('#cella11').css('display', 'none')
+		$('.fermoUI').css('display', 'none')
+		$('#fermo1').css('display', 'none')
+		$('.cella2UI').css('display', 'none')
+		$('.cella211').css('display', 'none')
+		$.post('http://esx_jailsystem/NUIFocusOff', JSON.stringify({}));
+	});
+	
+	$("#carcere1").submit(function(h) {
+        h.preventDefault(); 
+        
+        $.post('http://esx_jailsystem/carcere', JSON.stringify({
+			to: $("#to").val(),
+            amountt: $("#amountt").val()
+			
+        }));
+		
+		$('.general').css('display', 'none')
+		$('.cella1UI').css('display', 'none')
+		$('#cella11').css('display', 'none')
+		$('.carcereUI').css('display', 'none')
+		$('#carcere1').css('display', 'none')
+		$('.cella2UI').css('display', 'none')
+		$('.cella211').css('display', 'none')
+		$.post('http://esx_jailsystem/NUIFocusOff', JSON.stringify({}));
+	});
+
+	$("#cortile1").submit(function(h) {
+        h.preventDefault(); 
+        
+        $.post('http://esx_jailsystem/cortile', JSON.stringify({
+			pl: $("#pl").val(),
+            tempo: $("#tempo").val()
+			
+        }));
+		
+		$('.general').css('display', 'none')
+		$('.cella1UI').css('display', 'none')
+		$('#cella11').css('display', 'none')
+		$('.cortileUI').css('display', 'none')
+		$('#cortile1').css('display', 'none')
+		$('.cella2UI').css('display', 'none')
+		$('.cella211').css('display', 'none')
+		$.post('http://esx_jailsystem/NUIFocusOff', JSON.stringify({}));
+	});
+
+	$("#multa1").submit(function(h) {
+        h.preventDefault(); 
+        
+        $.post('http://esx_jailsystem/multa', JSON.stringify({
+			multato: $("#multato").val(),
+            multone: $("#multone").val()
+			
+        }));
+		
+		$('.general').css('display', 'none')
+		$('.cella1UI').css('display', 'none')
+		$('#cella11').css('display', 'none')
+		$('.multaUI').css('display', 'none')
+		$('#multa1').css('display', 'none')
+		$('.cella2UI').css('display', 'none')
+		$('.cella211').css('display', 'none')
+		$.post('http://esx_jailsystem/NUIFocusOff', JSON.stringify({}));
+	});
+
+	$("#libera1").submit(function(h) {
+        h.preventDefault(); 
+        
+        $.post('http://esx_jailsystem/libera', JSON.stringify({
+			achiquattro: $("#achiquattro").val()
+			
+        }));
+		
+		$('.general').css('display', 'none')
+		$('.cella1UI').css('display', 'none')
+		$('#cella11').css('display', 'none')
+		$('.liberaUI').css('display', 'none')
+		$('#libera1').css('display', 'none')
+		$('.cella2UI').css('display', 'none')
+		$('.cella211').css('display', 'none')
+		$.post('http://esx_jailsystem/NUIFocusOff', JSON.stringify({}));
+	});
+		
+		
+	$("#cella21").submit(function(g) {
+		g.preventDefault(); 
+        
+        $.post('http://esx_jailsystem/cella2l', JSON.stringify({
+            achidue: $("#achidue").val(),
+            minutinidue: $("#minutinidue").val()
+			
+        }));
+		$('.general').css('display', 'none')
+		$('.cella1UI').css('display', 'none')
+		$('#cella11').css('display', 'none')
+		$('.cella2UI').css('display', 'none')
+		$('.cella211').css('display', 'none')
+		
+		$.post('http://esx_jailsystem/NUIFocusOff', JSON.stringify({}));
+	});
+	 
+     $('#fermo').click(function(){
+            $('.general').css('display', 'none')
+		$('.fermoUI').css('display', 'block')
+		 $('#fermo1').css('display', 'block')
+
+     })
+	 
+	 $('#cancelfermo').click(function(){
+            $('.general').css('display', 'block')
+			$('.fermoUI').css('display', 'none')
+		
+     })
+
+	 $('#carcere').click(function(){
+            $('.general').css('display', 'none')
+		$('.carcereUI').css('display', 'block')
+		 $('#carcere1').css('display', 'block')
+
+     })
+	 
+	 $('#cancelcarcere').click(function(){
+            $('.general').css('display', 'block')
+			$('.carcereUI').css('display', 'none')
+		
+     })
+
+     $('#cortile').click(function(){
+            $('.general').css('display', 'none')
+		$('.cortileUI').css('display', 'block')
+		 $('#cortile1').css('display', 'block')
+
+     })
+	 
+	 $('#cancelcortile').click(function(){
+            $('.general').css('display', 'block')
+			$('.cortileUI').css('display', 'none')
+		
+     })
+
+     $('#multa').click(function(){
+            $('.general').css('display', 'none')
+		$('.multaUI').css('display', 'block')
+		 $('#multa1').css('display', 'block')
+
+     })
+	 
+	 $('#cancelmulta').click(function(){
+            $('.general').css('display', 'block')
+			$('.multaUI').css('display', 'none')
+		
+     })
+
+     $('#libera').click(function(){
+            $('.general').css('display', 'none')
+		$('.liberaUI').css('display', 'block')
+		 $('#libera1').css('display', 'block')
+
+     })
+	 
+	 $('#cancellibera').click(function(){
+            $('.general').css('display', 'block')
+			$('.liberaUI').css('display', 'none')
+		
+     })
+
+
+	document.onkeyup = function(data){
+        if (data.which == 27){
+            $('.main').css('display', 'none')
+            $('.general').css('display', 'none')
+            $('.cella1').css('display', 'none')
+			$('.cella2').css('display', 'none')
+			$('.fermoUI').css('display', 'none')
+			$('.carcereUI').css('display', 'none')
+			$('.cortileUI').css('display', 'none')
+			$('.multaUI').css('display', 'none')
+			$('.liberaUI').css('display', 'none')
+			$('.cella1UI').css('display', 'none')
+			$('#cella11').css('display', 'none')
+			$('.cella2UI').css('display', 'none')
+			$('.cella211').css('display', 'none')
+            $.post('http://esx_jailsystem/NUIFocusOff', JSON.stringify({}));
+        }
+    }
+
+	
+	</script>
+</html>

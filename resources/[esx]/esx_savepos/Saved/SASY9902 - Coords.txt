@@ -1,0 +1,2 @@
+{x = 3311.318, y = 5176.159, z = 19.615} {h = 64.712} {Comment: Processo oppio},
+{x = 1377.661, y = 2178.335, z = 97.612} {h = 70.969} {Comment: Raccolta oppio},

@@ -1,0 +1,3 @@
+{x = 554.836, y = 2662.965, z = 42.201} {h = 26.765} {Comment: Vendita dei prodotti},
+{x = -32.851, y = 1944.379, z = 190.186} {h = 95.487} {Comment: Elaborazione del Vino},
+{x = 555.386, y = 2663.539, z = 41.210} {h = 28.867} {Comment: Vendita dei Prodotti},

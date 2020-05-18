@@ -1,0 +1,1 @@
+INSERT INTO `items` (`name`, `label`, `limit`) VALUES ('firework', 'Firework', 10);

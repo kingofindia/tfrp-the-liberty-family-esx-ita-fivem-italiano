@@ -1,0 +1,18 @@
+TFRP_Ospedale
+TFRP_Ospedale2
+esx_rich_tablet
+esx_ambulancejob
+jsfour-idcard
+esx_lavorionline
+esx_hospitalù
+database esx_ambulancejob
+esx_ambulancecelldoors
+esx_distributor
+
+m1 - Handling.meta = 200.000$
+205gt - Prezzo = Rally, 150.000$ - Normale, 130.000$
+450crf - Prezzo = 140.000$
+500 - Handling, prezzo = 100.000$
+500x - Handling, prezzo = 180.000$
+690r - Handling, prezzo = 220.000$
+720s - Handling, prezzo = 800.000$
